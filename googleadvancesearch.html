@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Search</title>
+	<style type="text/css">
+
+        .topright {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 15px;
+          font-family: arial,sans-serif;
+          padding-right: 20px;
+          padding-top: 15px;
+          text-decoration: none; 
+          color: #5F6368; 
+        }
+		.topleft {
+         position: absolute;
+         top: 8px;
+         left: 16px;
+         font-size: 18px;
+       }
+
+
+		#round{
+			border-radius: 25px;
+			padding-left: 20px;
+			border:1px solid #C8C8C8;
+			height: 40px;
+			outline: none;
+			font-family: "Arial"
+            font-size: 18px;
+		}
+
+		#submit{
+          background-color: #f2f2f2;
+          border: 1px solid #f2f2f2;
+          border-radius: 4px;
+          color: #5F6368;
+          font-family: arial,sans-serif;
+          font-size: 14px;
+          margin: 11px 4px;
+          padding: 0 16px;
+          line-height: 27px;
+          height: 36px;
+          min-width: 54px;
+          text-align: center;
+          cursor: pointer;
+		}
+
+		#submit:hover{
+			border:1px solid grey;
+			color: #222;
+		}
+
+		.topright:hover{
+			text-decoration: underline;
+            text-decoration-color: #222;
+		}
+
+		button{
+
+			user-select: none;
+            line-height: 100%;
+            height: 30px;
+            min-width: 120px;
+			border-radius: 2px;
+            cursor: default;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+			box-shadow: none;
+            background-color: #4d90fe;
+            border: 1px solid #3079ed;
+            color: #fff;
+		}
+
+		button:hover{
+			background-color: #3366FF;
+		}
+
+	</style>
+</head>
+<body>
+     <a href="./index.html" class="topright">Search</a>
+	<form class="topleft"action="https://google.com/search">
+		<h2>Find pages with... </h2>
+		    <label for="as_q" style="padding-right: 93px;">all these words:</label>
+            <input type="text" name="as_q" size="71"><br><br>
+            <label for="as_epq" style="padding-right: 20px;">this exact word or phrase:</label>
+            <input type="text" name="as_epq" size="71"></div><br><br>
+            <label for="as_oq" style="padding-right: 66px;">any of these words:</label>
+            <input type="text" name="as_oq" size="71"></div><br><br>
+            <label for="as_eq" style="padding-right: 57px;">none of these words:</label>
+            <input type="text" name="as_eq" size="71"></div>
+            <div style="padding-left: 601px;"><br>
+            <button>Advance Search</button>
+            </div>
+      </form>
+</body>
+</html>

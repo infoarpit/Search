@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Search</title>
+	<style type="text/css">
+
+        .topright {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 15px;
+          font-family: arial,sans-serif;
+          padding-right: 20px;
+          padding-top: 15px;
+          text-decoration: none; 
+          color: #5F6368; 
+        }
+		#central{
+		    position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+		}
+
+		#round{
+			border-radius: 25px;
+			padding-left: 20px;
+			border:1px solid #C8C8C8;
+			height: 40px;
+			outline: none;
+			font-family: "Arial"
+            font-size: 18px;
+		}
+
+		#submit{
+          background-color: #f2f2f2;
+          border: 1px solid #f2f2f2;
+          border-radius: 4px;
+          color: #5F6368;
+          font-family: arial,sans-serif;
+          font-size: 14px;
+          margin: 11px 4px;
+          padding: 0 16px;
+          line-height: 27px;
+          height: 36px;
+          min-width: 54px;
+          text-align: center;
+          cursor: pointer;
+		}
+
+		#submit:hover{
+			border:1px solid grey;
+			color: #222;
+		}
+
+		.topright:hover{
+			text-decoration: underline;
+            text-decoration-color: #222;
+		}
+
+	</style>
+</head>
+<body>
+     <a href="./googleimage.html" class="topright" style="padding-right: 110px">Image</a>
+     <a href="./googleadvancesearch.html" class="topright">Advance</a>
+	<form id="central"action="https://google.com/search">
+            <input type="text" name="q" size="71" id="round"><br>
+            <input id="submit" type="submit" name="btnK" value="Google Search">
+            <input id="submit" type="submit" name="btnI" value="I’m Feeling Lucky" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg">
+      </form>
+</body>
+</html>
